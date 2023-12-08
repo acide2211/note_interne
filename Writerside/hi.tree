@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi"
+                 name="Help Instance"
+                 start-page="Default-topic.md">
+
+    <toc-element topic="Note-a-fiare.md"/>
+    <toc-element topic="Windows.md">
+        <toc-element topic="Changer-le-moteur-de-rechercher-par-defaut.md"/>
+    </toc-element>
+    <toc-element topic="Changer-un-progrmme-par-défault-windows-11.md"/>
+    <toc-element topic="rocketchat.md"/>
+    <toc-element topic="rasberry.md">
+        <toc-element topic="NextCloud.md"/>
+    </toc-element>
+    <toc-element topic="Linux.md">
+        <toc-element topic="Linux-Cheat.md"/>
+    </toc-element>
+    <toc-element topic="vmware.md"/>
+    <toc-element topic="Default-topic.md"/>
+    <toc-element topic="GLPI.md"/>
+    <toc-element topic="GLPI2.md"/>
+    <toc-element topic="GLPI-Installation.md"/>
+    <toc-element topic="Formation-Dyma-JAva.md">
+        <toc-element topic="67-Chapite.md"/>
+        <toc-element topic="68-Chapitre.md"/>
+    </toc-element>
+    <toc-element topic="20-Le-Logging.md"/>
+    <toc-element topic="CODE.md">
+        <toc-element topic="LOG-CH-code-avant-passage-en-logger.md"/>
+    </toc-element>
+    <toc-element topic="Formation-dyma-20.md">
+        <toc-element topic="107-Introduction-au-logging.md"/>
+        <toc-element topic="106-Introduction-au-logging-2.md"/>
+    </toc-element>
+    <toc-element topic="108-Configurer-les-loggers.md"/>
+</instance-profile>
