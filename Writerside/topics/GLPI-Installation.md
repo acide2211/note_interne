@@ -66,3 +66,12 @@ dbhos = localhost
 dbuser  root
 dbpassword toscane
 dbdefault glpi
+
+//Mettre les droit d'acces
+
+sudo chown -R www-data /var/www/html/glpi/
+
+var/www/html/glpi/config/glpicrypt.key
+
+
+Le schéma de base de données n'est pas conforme à celui de la version actuelle de GLPI. Il est recommandé d'exécuter la commande "php bin/console database:check_schema_integrity" pour voir les différences.

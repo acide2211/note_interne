@@ -6,6 +6,7 @@
                  name="Help Instance"
                  start-page="Default-topic.md">
 
+    <toc-element topic="NextclouNextCloud.md"/>
     <toc-element topic="Note-a-fiare.md"/>
     <toc-element topic="Windows.md">
         <toc-element topic="Changer-le-moteur-de-rechercher-par-defaut.md"/>
@@ -24,10 +25,10 @@
     <toc-element topic="GLPI2.md"/>
     <toc-element topic="GLPI-Installation.md"/>
     <toc-element topic="Formation-Dyma-JAva.md">
+        <toc-element topic="20-Le-Logging.md"/>
         <toc-element topic="67-Chapite.md"/>
         <toc-element topic="68-Chapitre.md"/>
     </toc-element>
-    <toc-element topic="20-Le-Logging.md"/>
     <toc-element topic="CODE.md">
         <toc-element topic="LOG-CH-code-avant-passage-en-logger.md"/>
     </toc-element>

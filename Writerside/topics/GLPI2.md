@@ -1,16 +1,15 @@
-# GLPI2
+# GLPI
+GLPI2
 sudo apt update
 sudo apt install apache2
 sudo apt install mariadb-servers
 sudo apt install php
 sudo apt install apache2 mariadb-server php php-mysql php-gd php-ldap php-xml php-mbstring php-curl php-zip php-intl php-json php-apcu
 
-
-
-
 sudo mysql_secure_installation
 sudo mysql -u root -p
 glpi
+// glpiuser
 
 dbhos = localhost
 dbuser  root
@@ -18,7 +17,7 @@ dbpassword toscane
 dbdefault glpi
 
 CREATE DATABASE glpi CHARACTER SET utf8 COLLATE utf8_general_ci;
-CREATE USER 'glpiuser'@'localhost' IDENTIFIED BY 'votre_mot_de_passe';
+CREATE USER 'glpiuser'@'localhost' IDENTIFIED BY 'votre_mot_de_passe'; glpi
 GRANT ALL PRIVILEGES ON glpi.* TO 'glpiuser'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
@@ -34,7 +33,16 @@ wget https://github.com/glpi-project/glpi/releases/download/9.5.0/glpi-9.5.0.tgz
 tar -zxvf glpi-9.5.0.tgz
 sudo mv glpi /var/www/html/
 
+// Derniere version 10.0.10
+
 sudo nano /etc/apache2/sites-available/glpi.conf
+wget https://github.com/glpi-project/glpi/releases/download/10.0.10/glpi-10.0.10.tgz
+
+tar -zxvf glpi-10.0.10.tgz
+sudo mv glpi /var/www/html/
+
+cd /etc/apache2/sites-availlable
+sudo cp 000-default.conf glpi.conf
 
 
 <VirtualHost *:80>
@@ -67,6 +75,12 @@ sudo a2ensite glpi.conf
 sudo systemctl restart apache2
 
 http://your_domain_or_IP/glpi
+
+Site en ligne
+
+// Importer la db
+
+mysql -u glpiuser -p glpi < sauvergarde_ad.sql
 
 Hello,
 This is a new install on Ubuntu 18.04 LTS and GLPI 9.5.4.  When I try to access the webserver at x.x.x.x/glpi/install.php I get a 404 not found error. These are the instructions that I used to install. Any help would be appreciated.
