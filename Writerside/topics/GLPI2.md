@@ -16,6 +16,7 @@ dbuser  root
 dbpassword toscane
 dbdefault glpi
 
+
 CREATE DATABASE glpi CHARACTER SET utf8 COLLATE utf8_general_ci;
 CREATE USER 'glpiuser'@'localhost' IDENTIFIED BY 'votre_mot_de_passe'; glpi
 GRANT ALL PRIVILEGES ON glpi.* TO 'glpiuser'@'localhost';
